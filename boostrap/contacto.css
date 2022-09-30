@@ -30,7 +30,7 @@ body {
 }
 
 .contact_form {
-    width: 500px;
+    width: 300px;
     height: auto;
     margin: 70px auto;
     border-radius: 15px;
@@ -42,7 +42,7 @@ body {
 
 input {
     background-color: #fbfbfb;
-    width: 408px;
+    width: 250px;
     height: 40px;
     border-radius: 5px;
     border-style: solid;
@@ -56,7 +56,7 @@ input {
 
 textarea {
     background-color: #fbfbfb;
-    width: 405px;
+    width: 250px;
     height: 150px;
     border-radius: 5px;
     border-style: solid;
@@ -86,7 +86,7 @@ button {
     border-color: #000000;
     border-style: none;
     border-radius: 10px;
-    width: 420px;
+    width: 250px;
     cursor: pointer;
 }
 
