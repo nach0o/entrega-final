@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor {
+    max-width: 1240px;
+    width: 100%;
+    margin: auto;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, minmax(50px,auto));
+    grid-template-areas:
+        " encabezado "
+        " hero "
+        " principal "
+        " pie " 
+    ;
+}
+
+header {
+    grid-area: encabezado;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    padding: 10px;
+
+}
+header ul{
+    display: flex;
+
+    list-style:none;
+}
+
+header img{
+    margin-right: auto;
+}
+
+header ul li{
+    flex-grow: 1;
+    text-align: center;
+}
+
+header ul li a{
+    display: block;
+
+    color: white;
+    padding: 9px;
+    font-size: 12px;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+
+
+#hero {
+    grid-area: hero;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:130px;
+    background-image: url(https://i.pinimg.com/564x/e6/fd/17/e6fd17e47a92215b638a722bfb9563b1.jpg);
+}
+
+#hero h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    color:  rgb(0, 255, 55);
+    font-family: 'Bebas Neue', cursive;
+}
+
+main {
+    grid-area: principal
+}
+
+footer {
+    grid-area: pie;
+}
+
+#sobremi {
+    display: flex;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+#sobremi div {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+#portfolio {
+    display: grid;
+    /* auto-fit, permite que calcule AUTOMÁTICAMENTE la cantidad de columnas, usando la función de "minmax", para tener una referencia de "cuando, agregar una columna o cuando quitar dependiendo de su mínimo (200px) a su máximo (1fr)" */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+}
+
+#portfolio img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #contenedor {
+            max-width: 900px;
+            width: 100%;
+            margin: auto;
+            
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, minmax(50px,auto));
+            grid-template-areas:
+                " encabezado "
+                " hero "
+                " principal "
+                " pie " 
+            ;
+        }
+        header {
+            grid-area: encabezado;
+            display: flex;
+            padding: 10px;
+            background: lightgray;
+
+        }
+        header img {
+            margin-right: auto;
+        }
+        header ul {
+            list-style: none;
+            display: flex
+        }
+        #hero {
+            grid-area: hero;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:130px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk9C1m-39jWKiBGTwvxYaMBQH1BatIYh1nBpN6yHCDChij3fkMcHE3kXtUTVyymmeqBzE&usqp=CAU");
+        }
+        #hero h1 {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 5px 10px;
+        }
+        main {
+            grid-area: principal
+        }
+        footer {
+            grid-area: pie;
+        }
+        #sobremi {
+            display: flex;
+        }
+        h2 {
+            margin: 10px 0;
+        }
+        #sobremi div {
+            flex-basis: 50%;
+            padding: 10px;
+        }
+        #portfolio {
+            display: grid;
+            /* auto-fit, permite que calcule AUTOMÁTICAMENTE la cantidad de columnas, usando la función de "minmax", para tener una referencia de "cuando, agregar una columna o cuando quitar dependiendo de su mínimo (200px) a su máximo (1fr)" */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 5px;
+        }
+        #portfolio img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <img src="" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="">item 1</a></li>
+                    <li><a href="">item 2</a></li>
+                    <li><a href="">item 3</a></li>
+                    <li><a href="">item 4</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="hero">
+            <h1>Ignacio</h1>
+        </div>
+        <main>
+            <h2>Sobre Mí</h2>
+            <section id="sobremi">
+                <div>
+                    <h3>Exp Lab</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, quisquam!</p>
+                    <a href="">ver</a>
+                </div>
+                <div>
+                    <h3>Educación</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus blanditiis, eos eveniet sed tempore laboriosam?</p>
+                    <a href="">ver</a>
+                </div>
+            </section>
+            <h2>Portfolio</h2>
+            <section id="portfolio">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+                <img src="https://picsum.photos/300" alt="">
+            </section>
+
+        </main>
+        <footer>
+            <p>Todos los derechos servados 2022</p>
+            <ul>
+                <li><a href="">fb</a></li>
+                <li><a href="">ig</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

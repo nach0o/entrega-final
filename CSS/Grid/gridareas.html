@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #contenedor {
+            display: grid;
+            grid-template-columns:100px 1fr 100px;
+            grid-template-rows: 80px 100px minmax(100px,1fr) 80px;
+            grid-template-areas: 
+               "nav enc enc "
+               "nav prod publi"
+               "nav serv publi"
+               "nav pie pie"
+            ;
+            gap: 5px;
+        }
+        #contenedor *{
+            background-color: rgb(87, 255, 247);
+            padding: 5px;
+        }
+        header{
+            grid-area: enc;
+        }
+        nav{
+            grid-area: nav;
+        }
+        #productos {
+            grid-area: prod;
+        }
+        #servicios {
+            grid-area: serv;
+        }
+        aside {
+            grid-area: publi;
+        }
+        footer {
+            grid-area: pie;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            Encabezado
+        </header>
+        <nav>
+            Navegación
+        </nav>
+        <section id="productos">
+            Productos
+        </section>
+        <section id="servicios">
+            Servicios
+        </section>
+        <aside>
+            Publicidad
+        </aside>
+        <footer>
+            Pie de página
+        </footer>
+    </div>
+</body>
+</html>
