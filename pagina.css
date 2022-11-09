@@ -19,9 +19,9 @@ body {
     position:initial;
 }
 h1 {
-    color: rgb(255, 255, 255);
-    background-image:url(https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/b325ed107494987.Y3JvcCwzMDAwLDIzNDYsMCwzMjY.jpg);
-    background-color: black;
+    color: rgb(0, 0, 0);
+    
+
     font-family: 'Bebas Neue', cursive;
 }
 h2 {
@@ -38,6 +38,7 @@ h2 {
 }
 .card-text{
     font-family: 'Bebas Neue', cursive;
+    font-family: 'Lato', sans-serif;
     color: aliceblue;
 }
 .card-link{
@@ -55,6 +56,7 @@ h2 {
     background-color: whitesmoke;
     color: rgb(26, 34, 143)
 }
+
 h3 { 
 
     color: black ;
