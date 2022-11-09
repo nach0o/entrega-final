@@ -37,7 +37,7 @@ h1 {
 
 .card {
     border: none;
-    background-image: url(https://i.pinimg.com/564x/27/fb/66/27fb664ce2cf99a0c9acd9937b572e22.jpg);
+    background-image: url(img/bg.jpg);
 }
 
 .card-body {
@@ -47,7 +47,7 @@ h1 {
 }
 
 .card-text{
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
 
     color: rgb(206, 206, 206);
 }
