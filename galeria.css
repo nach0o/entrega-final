@@ -1,0 +1,44 @@
+#logo{
+    margin-right: auto;
+    width: 15px;
+}
+
+.navbar-brand{
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    padding: 5px 10px;
+    background-color: black;
+}
+
+.nav-link{
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+}
+
+nav {
+    background-color:rgb(26, 34, 143);
+    }
+
+body {
+    background-image:url(https://i.pinimg.com/564x/f4/53/8e/f4538efab9e9ce79d0336faecbff95a2.jpg);
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    
+
+    font-family: 'Bebas Neue', cursive;
+}
+
+#img1 {
+    position:initial;
+}
+
+#galeria img {
+
+    transition: all 0.5s
+}
+
+#galeria img:hover {
+    transform: scale(1.5)
+}

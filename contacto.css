@@ -26,11 +26,11 @@ nav {
 body {
     height: 100%;
     font-family:'Bebas Neue', cursive;
-    background-image: url(https://i.pinimg.com/564x/27/fb/66/27fb664ce2cf99a0c9acd9937b572e22.jpg);
+    background-image: url(img/bg.jpg);
 }
 
 .contact_form {
-    width: 300px;
+    width: 350px;
     height: auto;
     margin: 70px auto;
     border-radius: 15px;
